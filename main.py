@@ -9,5 +9,7 @@ jikan = Jikan()
 Anime = Recommendation("anime")
 Manga = Recommendation("manga")
 
+print("Anime")
 Anime.print()
+print("Manga")
 Manga.print()

@@ -26,4 +26,3 @@ class Recommendation():
     def print(self):
         for variable2 in self.top5():
             print(variable2['title'] + "\n" + variable2['url'] + "\n")
-
