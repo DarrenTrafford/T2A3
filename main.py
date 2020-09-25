@@ -17,3 +17,5 @@ variable2 = json.loads(variable)
 
 pprint(variable2['recommendations'][0]['title'])
 pprint(variable2['recommendations'][0]['url'])
+
+print(data['recommendations'][::5])
