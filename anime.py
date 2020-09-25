@@ -13,7 +13,7 @@ class Recommendation():
 
     def getmalid(self):
         question = input(f"What {self.series} do you like?\n")
-        response = jikan.search('anime', question)
+        response = jikan.search(self.series, question)
         return response['results'][0]['mal_id']
 
     def get(self):
