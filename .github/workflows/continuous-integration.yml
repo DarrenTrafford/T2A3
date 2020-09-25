@@ -1,0 +1,11 @@
+name: continuous integration
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  test_suite:
+    runs-on: ubunutu-latest
+    steps:
+      - name: Checkout Branch
+        uses: actions/checkout@v2
