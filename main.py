@@ -14,6 +14,7 @@ Anime.print()
 print("Manga")
 Manga.print()
 
+print("Hello world")
 
 # Menu Message
 # MENU_MSG = """
