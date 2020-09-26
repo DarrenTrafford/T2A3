@@ -23,6 +23,17 @@ class Recommendation():
     def top5(self):
         return self.recommendations['recommendations'][:5]
 
-    def print(self):
+    def clean(self):
+        tobesaved = []
         for variable2 in self.top5():
-            print(variable2['title'] + "\n" + variable2['url'] + "\n")
+            tobesaved.append({variable2['title']: variable2['url']})
+        return({"name": tobesaved})
+
+    def print(self, data):
+        for i in data:
+            print(i[0],i[1])
+            print("")
+
+    @classmethod
+    def greeting(cls):
+        return "Greetings"
