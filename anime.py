@@ -8,12 +8,16 @@ class Recommendation():
 
     def __init__(self, series_str):
         self.series = series_str
+        self.name = self.askquestion()
         self.malid = self.getmalid()
         self.recommendations = self.get()
 
-    def getmalid(self):
+    def askquestion(self):
         question = input(f"What {self.series} do you like?\n")
-        response = jikan.search(self.series, question)
+        return question
+
+    def getmalid(self):
+        response = jikan.search(self.series, self.name)
         return response['results'][0]['mal_id']
 
     def get(self):
@@ -27,7 +31,7 @@ class Recommendation():
         tobesaved = []
         for variable2 in self.top5():
             tobesaved.append({variable2['title']: variable2['url']})
-        return({"name": tobesaved})
+        return(tobesaved)
 
     def print(self, data):
         for i in data:

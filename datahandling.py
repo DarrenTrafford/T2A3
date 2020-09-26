@@ -20,9 +20,12 @@ class Data():
             return []
 
     @classmethod
-    def update(cls, path, data):
+    def update(cls, path, data, name):
         olddata = cls.load("data.json")
-        print(olddata)
-        olddata["pickle"] = data
+        print("*****")
+        print(type(olddata))
+        olddata = json.loads(olddata)
+        olddata[name] = data
+        print("*****")
         jsonstring = json.dumps(olddata)
         cls.save(path, jsonstring)

@@ -3,6 +3,16 @@ from anime import Recommendation
 from datahandling import Data
 from prettyprinter import pprint
 import json
+import os.path
+
+if os.path.isfile("./data.json"):
+    pass
+else:
+    with open("data.json", "w") as file_handler:
+        emptydict = {}
+        emptydict = dict(emptydict)
+        json_string = json.dumps(emptydict)
+        file_handler.write(json_string)
 
 Recommendation.greeting()
 print(Recommendation.greeting())
@@ -10,13 +20,15 @@ print(Recommendation.greeting())
 jikan = Jikan()
 
 Anime = Recommendation("anime")
-Manga = Recommendation("manga")
+# Manga = Recommendation("manga")
 
-Data.save("data.json", Anime.clean())
+Data.update("data.json", Anime.clean(), Anime.name)
 #Anime.print(Data.load("data.json"))
 Anime2 = Recommendation("anime")
-Data.update("data.json", Anime2.clean())
-pprint(Data.load("data.json"))
+Data.update("data.json", Anime2.clean(), Anime2.name)
+# pprint(Data.load("data.json"))
+
+
 # Menu Message
 # MENU_MSG = """
 # *****=====*****=====*****=====*****=====*****
@@ -41,5 +53,8 @@ pprint(Data.load("data.json"))
 #     print("Please input valid selection 1-9:")
 #     menu_selection = int(input(">"))
 #   elif menu_selection == 1:
-
+#
+#
+#
+#
 #     break
