@@ -30,7 +30,7 @@ def viewlist(data, option):
             for atitle in value:
                 for key1, value1 in atitle.items():
                     print(f"{key1}: {value1}")
-
+# Anime Menu
 def animenu():
     print(Menus.ANIME_MSG)
     while True:
@@ -48,7 +48,7 @@ def animenu():
             print(Menus.RETURN_MSG)
         elif menu_selection == 9:
             exit()
-
+# Manga Menu
 def manmenu():
     print(Menus.MANGA_MSG)
     while True:
@@ -66,7 +66,7 @@ def manmenu():
             print(Menus.RETURN_MSG)
         elif menu_selection == 9:
             exit()
-
+# Return to main Menu
 def retmenu():
     print(Menus.RETURN_MSG)
     while True:
@@ -104,6 +104,7 @@ def mainmenu():
             viewlist(MangaData, "Manga \n")
         elif menu_selection == 9:
             exit()
+
 mainmenu()
 
 

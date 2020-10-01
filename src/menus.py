@@ -41,8 +41,10 @@ class Menus():
 
 
     # Return Menu
-    RETURN_MSG = """\n
+    RETURN_MSG = """
+    *****=====*****=====*****=====*****=====*****
     Would you like to:
     1. Return to Main Menu
     9. Exit
+    *****=====*****=====*****=====*****=====*****
     """
