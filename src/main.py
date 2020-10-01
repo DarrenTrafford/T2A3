@@ -1,32 +1,26 @@
 from jikanpy import Jikan
-from anime import Recommendation
-from datahandling import Data
-from prettyprinter import pprint
-import json
-import os.path
-
-if os.path.isfile("./data.json"):
-    pass
-else:
-    with open("data.json", "w") as file_handler:
-        emptydict = {}
-        emptydict = dict(emptydict)
-        json_string = json.dumps(emptydict)
-        file_handler.write(json_string)
+from src.anime import Recommendation
+from src.datahandling import AnimeData
+from src.datahandling import MangaData
 
 Recommendation.greeting()
 print(Recommendation.greeting())
 
 jikan = Jikan()
 
-Anime = Recommendation("anime")
-# Manga = Recommendation("manga")
+def test():
+    current_data = MangaData.load()
+    anime = Recommendation("manga")
+    current_data.append(anime.clean())
+    MangaData.save(current_data)
+    for recommendation in current_data:
+        for key,value in recommendation.items():
+            print(key, "\n")
+            for atitle in value:
+                for key1,value1 in atitle.items():
+                    print(f"{key1}: {value1}")
 
-Data.update("data.json", Anime.clean(), Anime.name)
-#Anime.print(Data.load("data.json"))
-Anime2 = Recommendation("anime")
-Data.update("data.json", Anime2.clean(), Anime2.name)
-# pprint(Data.load("data.json"))
+test()
 
 
 # Menu Message
