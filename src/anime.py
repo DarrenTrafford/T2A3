@@ -40,9 +40,3 @@ class Recommendation():
             tobesaved_list.append({variable2['title']: variable2['url']})
         tobesaved[self.name] = tobesaved_list
         return(tobesaved)
-
-
-
-    @classmethod
-    def greeting(cls):
-        return "Greetings"

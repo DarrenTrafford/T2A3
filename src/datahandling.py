@@ -19,10 +19,10 @@ class Data():
                 ret_data = file.readline()
                 return json.loads(ret_data)
         except json.JSONDecodeError as e:
-            print(e)
+            # print(e)
             return[]
         except Exception as e:
-            print(f"Error: {e}")
+            print("You don't currently have a list! Creating a new file for you!")
             return[]
 
     @classmethod
