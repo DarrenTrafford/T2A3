@@ -87,3 +87,4 @@ https://github.com/eric-chew - Keep an eye on this guy, he is amazing.
 
 ![alt-text](https://github.com/DarrenTrafford/T2A3/blob/Master/img/header2.jpg)
 
+###### I hold no rights to any Studio Ghibli Images
