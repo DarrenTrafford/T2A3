@@ -42,6 +42,10 @@ This is quite lightweight and not using many packages.
 - yarl==1.6.0
 
 ### Setup
+Clone this repository
+
+`git clone https://github.com/DarrenTrafford/T2A3`
+
 Initialise whichever method of pythons virtual environment, activate your environment and run the following:
 
 `pip install -r requirements.txt`
