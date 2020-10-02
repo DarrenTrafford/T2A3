@@ -44,7 +44,7 @@ This is quite lightweight and not using many packages.
 ### Setup
 Clone this repository
 
-`git clone https://github.com/DarrenTrafford/T2A3`
+`git clone https://github.com/DarrenTrafford/T2A3.git`
 
 Initialise whichever method of pythons virtual environment, activate your environment and run the following:
 
