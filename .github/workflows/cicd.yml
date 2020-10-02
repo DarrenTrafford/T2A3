@@ -26,3 +26,7 @@ jobs:
         run: |
           cd src
           flake8 .
+      - name: mypy
+        run: |
+          cd src
+          mypy .
