@@ -1,12 +1,12 @@
 from os import system
 from jikanpy import Jikan
-from src.anime import Recommendation
-from src.datahandling import AnimeData
-from src.datahandling import MangaData
-from src.menus import Menus
-
+from anime import Recommendation
+from datahandling import AnimeData
+from datahandling import MangaData
+from menus import Menus
 
 jikan = Jikan()
+
 #Logic to create new recommendation
 def newrec(data, option):
     current_data = data.load()
