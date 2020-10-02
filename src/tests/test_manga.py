@@ -1,9 +1,6 @@
 import unittest
 from unittest.mock import patch
 from anime import Recommendation
-# from main import newrec
-# from main import viewlist
-# from file_handler import JsonHandler
 
 
 class TestRecommendation(unittest.TestCase):
@@ -13,6 +10,7 @@ class TestRecommendation(unittest.TestCase):
         recommendation = Recommendation("manga")
         result = recommendation.getmalid()
         self.assertEqual(result, 2)
+
 
 class TestData(unittest.TestCase):
 

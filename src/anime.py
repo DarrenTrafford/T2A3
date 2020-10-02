@@ -4,7 +4,8 @@ import json
 
 jikan = Jikan()
 
-class Recommendation():
+
+class Recommendation:
 
     def __init__(self, series_str):
         self.series = series_str
@@ -12,27 +13,30 @@ class Recommendation():
         self.malid = self.getmalid()
         self.recommendations = self.get()
 
+# Begin finding MAL ID for recommendation
 
-## Begin finding MAL ID for recommendation
     def askquestion(self):
         question = input(f"What {self.series} do you like?\n")
         return question
 
-## MAL ID grabbed from installed API
+# MAL ID grabbed from installed API
     def getmalid(self):
         response = jikan.search(self.series, self.name)
         return response['results'][0]['mal_id']
 
-## API Call using MAL ID returns Anime information
+# API Call using MAL ID returns Anime information
     def get(self):
-        variable = requests.get(f"https://api.jikan.moe/v3/{self.series}/{self.malid}/recommendations").text
+        variable = requests.get("https://api.jikan.moe/v3/" +
+                                f"{self.series}/" +
+                                f"{self.malid}/" +
+                                "recommendations").text
         return json.loads(variable)
 
-## Logic to give me top 5 recommendations based on input above
+# Logic to give me top 5 recommendations based on input above
     def top5(self):
         return self.recommendations['recommendations'][:5]
 
-## Slicing data to get only the Title and URL
+# Slicing data to get only the Title and URL
     def clean(self):
         tobesaved = {}
         tobesaved_list = []

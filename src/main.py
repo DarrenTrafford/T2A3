@@ -7,7 +7,9 @@ from menus import Menus
 
 jikan = Jikan()
 
-#Logic to create new recommendation
+# Logic to create new recommendation
+
+
 def newrec(data, option):
     current_data = data.load()
     anime = Recommendation(option)
@@ -21,7 +23,9 @@ def newrec(data, option):
             for key1, value1 in atitle.items():
                 print(f"{key1}: {value1}")
 
-#Logic to view existing lists
+# Logic to view existing lists
+
+
 def viewlist(data, option):
     alldata = data.load()
     print(f"Your Current {option} Recommendations:")
@@ -32,11 +36,13 @@ def viewlist(data, option):
                 for key1, value1 in atitle.items():
                     print(f"{key1}: {value1}")
 # Anime Menu
+
+
 def animenu():
     print(Menus.ANIME_MSG)
     while True:
         menu_selection = int(input(">"))
-        if menu_selection not in [1,2,9]:
+        if menu_selection not in [1, 2, 9]:
             print("Please input valid selection 1,2 or 9")
         elif menu_selection == 1:
             system('clear')
@@ -48,7 +54,7 @@ def animenu():
             print(Menus.RETURN_MSG)
             while True:
                 submenu_selection = int(input(">"))
-                if submenu_selection not in [1,9]:
+                if submenu_selection not in [1, 9]:
                     print("Please input valid selection 1 or 9")
                 elif submenu_selection == 1:
                     return
@@ -57,11 +63,13 @@ def animenu():
         elif menu_selection == 9:
             return()
 # Manga Menu
+
+
 def manmenu():
     print(Menus.MANGA_MSG)
     while True:
         menu_selection = int(input(">"))
-        if menu_selection not in [1,2,9]:
+        if menu_selection not in [1, 2, 9]:
             print("Please input valid selection 1,2 or 9")
         elif menu_selection == 1:
             system('clear')
@@ -73,7 +81,7 @@ def manmenu():
             print(Menus.RETURN_MSG)
             while True:
                 submenu_selection = int(input(">"))
-                if submenu_selection not in [1,9]:
+                if submenu_selection not in [1, 9]:
                     print("Please input valid selection 1 or 9")
                 elif submenu_selection == 1:
                     return
@@ -84,11 +92,13 @@ def manmenu():
 
 
 # Main menu loop:
+
+
 def mainmenu():
     while True:
         print(Menus.MENU_MSG)
         menu_selection = int(input(">"))
-        if menu_selection not in [1,2,3,4,9]:
+        if menu_selection not in [1, 2, 3, 4, 9]:
             print("Please input valid selection 1-4 or 9:")
         elif menu_selection == 1:
             newrec(AnimeData, "anime")
@@ -101,7 +111,7 @@ def mainmenu():
             print(Menus.RETURN_MSG)
             while True:
                 submenu_selection = int(input(">"))
-                if submenu_selection not in [1,9]:
+                if submenu_selection not in [1, 9]:
                     print("Please input valid selection 1 or 9")
                 elif submenu_selection == 1:
                     return
@@ -112,7 +122,7 @@ def mainmenu():
             print(Menus.RETURN_MSG)
             while True:
                 submenu_selection = int(input(">"))
-                if submenu_selection not in [1,9]:
+                if submenu_selection not in [1, 9]:
                     print("Please input valid selection 1 or 9")
                 elif submenu_selection == 1:
                     return
@@ -121,6 +131,5 @@ def mainmenu():
         elif menu_selection == 9:
             exit()
 
+
 mainmenu()
-
-

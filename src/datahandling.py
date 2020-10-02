@@ -2,8 +2,10 @@ import json
 
 from os.path import isfile
 
-#Logic to save and load lists without overwriting the previous save
-class Data():
+# Logic to save and load lists without overwriting the previous save
+
+
+class Data:
 
     file_path = "../data.json"
 
@@ -20,10 +22,12 @@ class Data():
                 ret_data = file.readline()
                 return json.loads(ret_data)
         except json.JSONDecodeError as e:
-            # print(e)
+            print(e)
             return[]
-        except Exception as e:
-            print("You don't currently have a list! Creating a new file for you!\n")
+        except Exception:
+            print(
+                "You don't currently have a list! "
+                "Creating a new file for you!\n")
             return[]
 
     @classmethod
@@ -35,9 +39,11 @@ class Data():
             with open(cls.file_path, 'w') as file:
                 file.write(json.dumps(data))
 
+
 class AnimeData(Data):
 
     file_path = "../anime.json"
+
 
 class MangaData(Data):
 
