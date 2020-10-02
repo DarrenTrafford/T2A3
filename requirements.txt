@@ -9,11 +9,15 @@ idna==2.10
 jikanpy==4.2.2
 mccabe==0.6.1
 multidict==4.7.6
+mypy==0.782
+mypy-extensions==0.4.3
 prettyprinter==0.18.0
 pycodestyle==2.6.0
 pyflakes==2.2.0
 Pygments==2.7.1
 requests==2.24.0
 simplejson==3.17.2
+typed-ast==1.4.1
+typing-extensions==3.7.4.3
 urllib3==1.25.10
 yarl==1.6.0

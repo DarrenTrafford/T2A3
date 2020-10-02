@@ -22,24 +22,9 @@ Current workflow is setup to push through GitHub Actions CI/CD pipeline to and A
 Development Machine -> Flake8/Mypy -> GitHub -> Automated testing -> Push to master -> Deploy & run on EC2
 
 ## Installation
-### Dependencies
-This is quite lightweight and not using many packages.
+### Requirements
 
-- aiohttp==3.6.2
-- async-timeout==3.0.1
-- attrs==20.2.0
-- certifi==2020.6.20
-- chardet==3.0.4
-- colorful==0.5.4
-- idna==2.10
-- jikanpy==4.2.2
-- multidict==4.7.6
-- prettyprinter==0.18.0
-- Pygments==2.7.1
-- requests==2.24.0
-- simplejson==3.17.2
-- urllib3==1.25.10
-- yarl==1.6.0
+[Requirements](requirements.txt)
 
 ### Setup
 Clone this repository
