@@ -18,6 +18,7 @@ A screengrab of what you can expect to see
 ## Workflow
 
 Current workflow is setup to push through GitHub Actions CI/CD pipeline to and Amazon EC2 instance for deployment. The pipeline looks like this:
+
 Development Machine -> Flake8/Mypy -> GitHub -> Automated testing -> Push to master -> Deploy & run on EC2
 
 ## Installation
