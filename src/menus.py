@@ -22,7 +22,7 @@ class Menus():
     Would you like to:
     1. Get New Anime Recommendations
     2. View Your Anime Recommendations
-    9. Exit
+    9. Return to Main Menu
     
     *****=====*****=====*****=====*****=====*****
     """
@@ -34,7 +34,7 @@ class Menus():
     Would you like to:
     1. Get New Manga Recommendations
     2. View Your Manga Recommendations
-    9. Exit
+    9. Return to Main Menu
     
     *****=====*****=====*****=====*****=====*****
     """

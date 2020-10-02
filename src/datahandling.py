@@ -2,6 +2,7 @@ import json
 
 from os.path import isfile
 
+#Logic to save and load lists without overwriting the previous save
 class Data():
 
     file_path = "../data.json"
