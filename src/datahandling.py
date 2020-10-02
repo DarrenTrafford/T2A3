@@ -23,7 +23,7 @@ class Data():
             # print(e)
             return[]
         except Exception as e:
-            print("You don't currently have a list! Creating a new file for you!")
+            print("You don't currently have a list! Creating a new file for you!\n")
             return[]
 
     @classmethod

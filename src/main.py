@@ -41,6 +41,7 @@ def animenu():
         elif menu_selection == 1:
             system('clear')
             newrec(AnimeData, "anime")
+            print(Menus.ANIME_MSG)
         elif menu_selection == 2:
             system('clear')
             viewlist(AnimeData, "Anime \n")
@@ -65,6 +66,7 @@ def manmenu():
         elif menu_selection == 1:
             system('clear')
             newrec(MangaData, "manga")
+            print(Menus.MANGA_MSG)
         elif menu_selection == 2:
             system('clear')
             viewlist(MangaData, "Manga \n")
@@ -96,8 +98,26 @@ def mainmenu():
             manmenu()
         elif menu_selection == 3:
             viewlist(AnimeData, "Anime \n")
+            print(Menus.RETURN_MSG)
+            while True:
+                submenu_selection = int(input(">"))
+                if submenu_selection not in [1,9]:
+                    print("Please input valid selection 1 or 9")
+                elif submenu_selection == 1:
+                    return
+                elif submenu_selection == 9:
+                    exit()
         elif menu_selection == 4:
             viewlist(MangaData, "Manga \n")
+            print(Menus.RETURN_MSG)
+            while True:
+                submenu_selection = int(input(">"))
+                if submenu_selection not in [1,9]:
+                    print("Please input valid selection 1 or 9")
+                elif submenu_selection == 1:
+                    return
+                elif submenu_selection == 9:
+                    exit()
         elif menu_selection == 9:
             exit()
 
