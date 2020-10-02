@@ -3,7 +3,7 @@ from jikanpy import Jikan
 from src.anime import Recommendation
 from src.datahandling import AnimeData
 from src.datahandling import MangaData
-from menus import Menus
+from src.menus import Menus
 
 
 jikan = Jikan()
