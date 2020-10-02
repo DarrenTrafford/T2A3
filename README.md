@@ -71,6 +71,7 @@ Example of the message you will see
 - Images
 - Random Anime Search
 - Displaying top rated User Reviews
+- Deleting objects from lists & preventing duplicate entries
 
 ## Usage
 Please feel free to fork this and/or report bugs to me! I created this for an assignment but I am intending to continue to work on this
@@ -84,6 +85,12 @@ https://github.com/eric-chew - Keep an eye on this guy, he is amazing.
 
 ## FAQ
 -Coming Soon.
+
+## Flow Chart Logic
+
+![alt-text](https://github.com/DarrenTrafford/T2A3/blob/Master/img/t2a3flowchart.png)
+
+This is what I based my code structure off
 
 ![alt-text](https://github.com/DarrenTrafford/T2A3/blob/Master/img/header2.jpg)
 
