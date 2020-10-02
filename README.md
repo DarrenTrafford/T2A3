@@ -11,7 +11,9 @@ This API has a lot of features, however I have thus far only implemented a basic
 
 I have included some basic menu's with plans on adding to this in the future, so be sure to keep an eye on this if you are an Anime or Manga fan!
 
-![alt-text](https://github.com/DarrenTrafford/T2A3/blob/Master/img/mainmenu.PNG) "A screengrab of what you can expect to see"
+![alt-text](https://github.com/DarrenTrafford/T2A3/blob/Master/img/mainmenu.PNG) 
+
+A screengrab of what you can expect to see
 
 ## Workflow
 
@@ -51,7 +53,10 @@ To run this application you will simply execute main.py as follows:
 ## What to Expect
 The first time you run this program for either Anime or Manga, it will create a file where it will store your recommendations.
 It requires to do this for both, but don't worry as it will create the file and add your first search at the same time.
-![alt-text](https://github.com/DarrenTrafford/T2A3/blob/Master/img/listcreation.PNG)"Example of the message you will see"
+
+![alt-text](https://github.com/DarrenTrafford/T2A3/blob/Master/img/listcreation.PNG)
+
+Example of the message you will see
 
 ## Release History
 
