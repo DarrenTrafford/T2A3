@@ -24,7 +24,7 @@ def newrec(data, option):
 #Logic to view existing lists
 def viewlist(data, option):
     alldata = data.load()
-    print(f"Your Current {option} Recommendations:\n")
+    print(f"Your Current {option} Recommendations:")
     for recommendation in alldata:
         for key, value in recommendation.items():
             print("\n", key, "\n")
